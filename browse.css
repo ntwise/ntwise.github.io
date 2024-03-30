@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-image: url("Background\ Cover.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.header-a {
+  display: inline;
+  font-size: 48px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 50px;
+  color: rgb(44, 44, 44);
+}
+
+.small-nav {
+  position: relative;
+  display: inline;
+}
+.small-logo {
+  width: 80px;
+  display: inline-block;
+  position: relative;
+  right: 0;
+  bottom: -20px;
+}
+
+.header {
+  padding-bottom: 20px;
+  margin: 50px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.navigation {
+  display: inline;
+}
+
+.navigation a {
+  margin-right: 50px;
+}
+
+.navigation a:link {
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation a:visited {
+  color: black;
+}
+
+.navigation a:hover {
+  color: grey;
+}
+
+.navigation a:active {
+  color: black;
+}
+
+/* Create the code below here */
+
+.search-bar {
+  margin-top: 20px;
+
+  width: 1000px;
+  padding: 10px;
+  height: 50px;
+
+  font-size: 20px;
+
+  margin: 0 auto;
+  display: block;
+  border: 0;
+  background-color: rgb(94, 177, 191, 0.28);
+}
+
+.main-page {
+  width: auto;
+  height: auto;
+  /* background-color: black; */
+
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.job-section {
+  /* background-color: red; */
+  width: auto;
+  height: 650px;
+}
+
+.job-card {
+  width: auto;
+  height: 80px;
+
+  border-left: 3px solid black;
+  padding-left: 12px;
+  margin: auto auto;
+
+  /* background-color: green; */
+
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  /* grid-template-rows: 1fr 1fr; */
+  align-items: center;
+  justify-self: start;
+  column-gap: 20px;
+}
+
+.job-title {
+  color: grey;
+}
+.card-details {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+.card-details span {
+  margin-left: 10px;
+}
+
+.card-button {
+  grid-column: 2;
+  align-self: start;
+
+  border: 2px solid #00b2ff;
+  background-color: white;
+  height: 30px;
+
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.card-button:active {
+  color: white;
+  background-color: #00b2ff;
+}
+
+.card-button:hover {
+  color: white;
+  background-color: #00b2ff;
+}
+.job-descriptions {
+  position: relative;
+  width: auto;
+  height: 650px;
+  /* background-color: orange; */
+
+  display: flex;
+  align-items: start;
+  justify-items: start;
+
+  border: 1px solid #c2c2c2;
+  border-radius: 1px;
+}
+
+.job-desc-right {
+  flex: 0 0 200px;
+  padding: 30px;
+}
+
+.job-desc-left {
+  padding: 20px;
+}
+
+.border {
+  background-color: #c2c2c2;
+  width: 2px;
+  height: 100%;
+}
+
+.filter {
+  background-color: rgb(94, 177, 191, 0.28);
+  width: 100%;
+  height: 100px;
+
+  grid-column: 2;
+  padding-right: 20px;
+  display: block;
+  justify-self: start;
+}
+
+.filter-bar {
+  width: 200px;
+  height: 50px;
+
+  margin-top: 20px;
+  margin-left: 20px;
+
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #5eb1bf;
+  border-radius: 10px;
+}
+
+.submit {
+  width: 100px;
+  height: 50px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.job-offers {
+  width: auto;
+  list-style: none;
+}
+
+.job-description-heading {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: start;
+  column-gap: 10px;
+}
+
+.job-description-image {
+  width: 100px;
+  height: 100px;
+  background-color: #f4f4f4;
+  grid-column: 1;
+  grid-row: 1 / -1;
+
+  border-radius: 100%;
+}
+
+.job-description-image img {
+  width: 86px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.job-description-text {
+  grid-column: 2;
+  grid-row: 1 / -1;
+}
+
+.job-description-text h3 {
+  font-size: 24px;
+  align-self: end;
+}
+
+.job-description-text span {
+  font-size: 20px;
+  align-self: start;
+  grid-row: 2;
+}
+
+.apply-button {
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  width: 180px;
+  height: 50px;
+  border: 3px solid #009bd6;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+
+  text-decoration: none;
+  text-align: center;
+  padding-top: 8px;
+
+  justify-self: center;
+}
+
+.apply-button:hover {
+  background-color: #009bd6;
+  color: white;
+}
+
+.apply-button:active {
+  background-color: #009bd6;
+  color: white;
+}
+.listItem {
+  margin-bottom: 10px;
+}
+/* Create the code above here */
+
+footer {
+  background-color: #009bd6;
+  font-size: 18px;
+  width: 100%;
+  height: 25px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
